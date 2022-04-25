@@ -1,0 +1,38 @@
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+  <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mt-12">
+          
+<a href="/create" class="font-semibold bg-red-500 text-xl text-white hover:bg-red-700 px-8 py-4 text-center rounded-md 
+  mx-auto">Generar una Entrada</a>
+
+<a href="/logout" class="font-semibold bg-red-500 text-xl text-white hover:bg-red-700 px-8 py-4 text-center rounded-md 
+  mx-auto">Cerrar Sesion</a>
+
+    <table class="table-fixed w-full">
+      <thead>
+        <tr class="bg-red-500 text-white">
+           <th class="w-20 py-4 ...">ID</th>
+          <th class="w-1/4 py-4 ...">Nombre</th>
+          <th class="w-1/2 py-4 ...">Hora de Salida</th>
+          <th class="w-1/2 py-4 ...">Actividad</th>
+          <th class="w-1/2 py-4 ...">Telefono</th>
+          <th class="w-28 py-4 ...">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each tasks}}
+        <tr>
+          <td class="py-3 px-6">{{id}}</td>
+          <td class="p-3">{{title}}</td>
+          <td class="p-3 text-center">{{description}}</td>
+          <td class="p-3 text-center">{{actividad}}</td>
+          <td class="p-3 text-center">{{telefono}}</td>
+          <td class="p-3 flex">
+              
+            
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
